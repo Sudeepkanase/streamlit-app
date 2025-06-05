@@ -22,7 +22,7 @@ def call_backend_api(endpoint: str, data: Dict[str, Any] = None) -> Dict[str, An
         if data:
             response = requests.post(url, json=data, timeout=120)
         else:
-            response = requests.get(url, timeout=30)
+            response = requests.get(url, timeout=120)
         
         if response.status_code == 200:
             return response.json()
