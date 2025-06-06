@@ -1,1 +1,1 @@
-# streamli-app
+# Natural Language SQL Interface
